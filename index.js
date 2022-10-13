@@ -30,6 +30,7 @@ app.get('/api/:id' , function(req , res) {
     {
         const collections = db.collection('api');
         collections.findOne({
+            
             _id : ObjectId(req.params.id)} , function(err , result)
         {
             if(!err)
